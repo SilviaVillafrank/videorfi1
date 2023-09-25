@@ -31,7 +31,7 @@ table {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
+    margin-top: 50px;
     border-collapse: collapse;
     font-size:30px;
 }
@@ -73,5 +73,10 @@ td {
     margin-left: auto;
     margin-right: 180px;
     margin-top: 50px;
+    margin-bottom: 50px;
 
+}
+
+.fa-arrow-right {
+    padding: 10px 1px;
 }
