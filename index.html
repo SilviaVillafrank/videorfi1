@@ -1,43 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/f593a5b11e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="Video.css">
-    <script src="Video.js" defer></script>
+    <link rel="stylesheet" href="Video.css">
     <title>Video</title>
 </head>
-
 <body>
-                <div class="content">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="cella">SCARTAMENTO S1</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <td>
-                                <video width="850" controls>
-                                    <source src="videoconvert/S1.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <tr>
-                                <td class ="descrizione">-	L’operatore individua la giunzione di ingresso e traccia il punto di riferimento direttamente sulla rotaia tramite con un pennarello. <p>
-                                    -	L’operatore individua la giunzione di ingresso e traccia il punto di riferimento direttamente sulla rotaia tramite con un pennarello. <p>
-                                    -	Preme il tasto 5 <p>
-                                    -	Mentendo fermo F1, muove di qualche cm F2, tracciando un arco, al fine di individuare la misura più piccola corrispondente al calibro ortogonale alla rotaia.
-                                        In alternativa al tracciamento dell’arco è possibile utilizzare i tastatori su F1 per ricavare l’ortogonalità. <p>
-                                    -	Annotare la misura
-                                </td>
-                            </tr>
-                        </tbody>   
-                    </table>
-                    <button class="avanti">  AVANTI  &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
-                </div>
+    <h1 id="video-title">Titolo</h1>
+    <div id="video-container" class="video-center">
+        <video id="video-player" width="850" controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <p id="video-description">Descrizione del video 1.</p>
+    <button id="prev-button">Indietro</button>
+    <button id="next-button">Avanti</button>
+    <script src="Video.js"></script>
 </body>
-
 </html>
