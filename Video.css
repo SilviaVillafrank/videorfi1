@@ -6,10 +6,7 @@
 
 #video-description {
     font-size: 30px;
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 150px;
+    text-align: center;
 }
 
 #video-container.video-center {
@@ -31,9 +28,9 @@
     font-size: 22px;
     display: flex;
     margin-left: auto;
-    margin-right: 180px;
     margin-top: 50px;
     margin-bottom: 50px;
+
 }
 
 #prev-button {
@@ -45,8 +42,8 @@
     cursor: pointer;
     font-size: 22px;
     display: flex;
-    margin-left: 180px;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: -95px;
+    
 }
