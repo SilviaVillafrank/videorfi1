@@ -49,9 +49,10 @@ function updateVideo(index) {
 }
 
 prevButton.addEventListener("click", () => {
-    if (currentIndex > 0) {
-        updateVideo(currentIndex - 1);
-    }
+    //if (currentIndex > 0) {
+       // updateVideo(currentIndex - 1);
+   // }
+   createVideoElement("videoconvert/S1.mp4")
 });
 
 nextButton.addEventListener("click", () => {
@@ -60,7 +61,7 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-/*function createVideoElement(videoUrl) {
+function createVideoElement(videoUrl) {
     var containerDiv = document.getElementById("video-container");
     
     
@@ -72,11 +73,11 @@ nextButton.addEventListener("click", () => {
             containerDiv.appendChild(videoElement);
     }
     
-    document.addEventListener("DOMContentLoaded", function(event) {
+   /*document.addEventListener("DOMContentLoaded", function(event) {
        
     // codice per creare un nodo e renderlo figlio del div, e poi caricare il video 
      createVideoElement("videoconvert/S1.mp4")
     });*/
 
 // Initialize with the first video
-updateVideo(0);
+//updateVideo(0);
