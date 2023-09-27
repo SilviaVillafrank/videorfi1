@@ -24,35 +24,21 @@ let currentIndex = 0;
 
 const videoTitleElement = document.getElementById("video-title");
 const videoDescriptionElement = document.getElementById("video-description");
-const videoContainer = document.getElementById("video-container");
+const videoPlayerElement = document.getElementById("video-player");
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
 
 function updateVideo(index) {
     videoTitleElement.textContent = videoTitles[index];
     videoDescriptionElement.textContent = videoDescriptions[index];
-
-    // Rimuovi l'elemento video esistente, se presente
-    const existingVideo = videoContainer.querySelector("video");
-    if (existingVideo) {
-        videoContainer.removeChild(existingVideo);
-    }
-
-    // Crea e aggiungi un nuovo elemento video
-    const videoElement = document.createElement("video");
-    videoElement.width = "100%";
-    videoElement.controls = true;
-    videoElement.src = videoSources[index];
-    videoContainer.appendChild(videoElement);
-
+    videoPlayerElement.src = videoSources[index];
     currentIndex = index;
 }
 
 prevButton.addEventListener("click", () => {
-    //if (currentIndex > 0) {
-       // updateVideo(currentIndex - 1);
-   // }
-   createVideoElement("videoconvert/S1.mp4")
+    if (currentIndex > 0) {
+        updateVideo(currentIndex - 1);
+    }
 });
 
 nextButton.addEventListener("click", () => {
@@ -61,23 +47,5 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-function createVideoElement(videoUrl) {
-    var containerDiv = document.getElementById("video-container");
-    
-    
-            var videoElement = document.createElement("video");
-    
-            videoElement.src = videoUrl; // Sostituisci con l'URL del tuo video
-            videoElement.controls = true; // Permette i controlli del video (play, pausa, volume, ecc.)
-    
-            containerDiv.appendChild(videoElement);
-    }
-    
-   /*document.addEventListener("DOMContentLoaded", function(event) {
-       
-    // codice per creare un nodo e renderlo figlio del div, e poi caricare il video 
-     createVideoElement("videoconvert/S1.mp4")
-    });*/
-
 // Initialize with the first video
-//updateVideo(0);
+updateVideo(0);
