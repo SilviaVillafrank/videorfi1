@@ -60,5 +60,26 @@ nextButton.addEventListener("click", () => {
     }
 });
 
+function createVideoElement(videoUrl) {
+    const videoContainer = document.getElementById("video-container");
+
+    // Rimuovi l'elemento video esistente, se presente
+    const existingVideo = videoContainer.querySelector("video");
+    if (existingVideo) {
+        videoContainer.removeChild(existingVideo);
+    }
+
+    const videoElement = document.createElement("video");
+    videoElement.width = "100%";
+    videoElement.controls = true;
+    videoElement.src = videoUrl;
+
+    videoContainer.appendChild(videoElement);
+}
+
+// Ora puoi chiamare questa funzione passando l'URL del video come argomento
+createVideoElement("videoconvert/S1.mp4"); // Sostituisci con l'URL del tuo video
+
+
 // Initialize with the first video
 updateVideo(0);
