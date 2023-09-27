@@ -60,7 +60,7 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-function createVideoElement(videoUrl) {
+/*function createVideoElement(videoUrl) {
     var containerDiv = document.getElementById("video-container");
     
     
@@ -76,7 +76,7 @@ function createVideoElement(videoUrl) {
        
     // codice per creare un nodo e renderlo figlio del div, e poi caricare il video 
      createVideoElement("videoconvert/S1.mp4")
-    });
+    });*/
 
 // Initialize with the first video
 updateVideo(0);
