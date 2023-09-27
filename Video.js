@@ -24,14 +24,27 @@ let currentIndex = 0;
 
 const videoTitleElement = document.getElementById("video-title");
 const videoDescriptionElement = document.getElementById("video-description");
-const videoPlayerElement = document.getElementById("video-player");
+const videoContainer = document.getElementById("video-container");
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
 
 function updateVideo(index) {
     videoTitleElement.textContent = videoTitles[index];
     videoDescriptionElement.textContent = videoDescriptions[index];
-    videoPlayerElement.src = videoSources[index];
+
+    // Rimuovi l'elemento video esistente, se presente
+    const existingVideo = videoContainer.querySelector("video");
+    if (existingVideo) {
+        videoContainer.removeChild(existingVideo);
+    }
+
+    // Crea e aggiungi un nuovo elemento video
+    const videoElement = document.createElement("video");
+    videoElement.width = "100%";
+    videoElement.controls = true;
+    videoElement.src = videoSources[index];
+    videoContainer.appendChild(videoElement);
+
     currentIndex = index;
 }
 
