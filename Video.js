@@ -1,4 +1,4 @@
-/*const videoTitles = ["Scartamento S1", "Scartamento S2", "Scartamento S3","Scartamento S4", "Scartamento S5", "Scartamento S6","Scartamento S7","Scartamento S8", 
+const videoTitles = ["Scartamento S1", "Scartamento S2", "Scartamento S3","Scartamento S4", "Scartamento S5", "Scartamento S6","Scartamento S7","Scartamento S8", 
 "Quota passaggio aghi QPA1","Quota passaggio aghi QPA2", "Quota ingresso della controrotaia QIC1", "Quota ingresso della controrotaia QIC3", "Quota ingresso della controrotaia QIC4", 
 "Quota ingresso della zampa di lepre QIZ1", "Quota ingresso della zampa di lepre QIZ2",
 "Quota di libero passaggio QLP1","Quota di libero passaggio QLP2",
@@ -48,4 +48,4 @@ nextButton.addEventListener("click", () => {
 });
 
 // Initialize with the first video
-updateVideo(0);*/
+updateVideo(0);
