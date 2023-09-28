@@ -24,7 +24,8 @@ let currentIndex = 0;
 
 const videoTitleElement = document.getElementById("video-title");
 const videoDescriptionElement = document.getElementById("video-description");
-const videoPlayerElement = document.getElementById("video-player");
+//const videoPlayerElement = document.getElementById("video-player");
+var videoPlayerElement;
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
 const startButton = document.getElementById("start-button");
@@ -34,6 +35,7 @@ function updateVideo(index) {
     videoTitleElement.textContent = videoTitles[index];
     videoDescriptionElement.textContent = videoDescriptions[index];
     videoPlayerElement.src = videoSources[index];
+    videoPlayerElement.load();
     currentIndex = index;
 }
 
@@ -53,9 +55,20 @@ startButton.addEventListener("click", () => {
     startButton.hidden=true;
     container.hidden=false;
 
-
+    videoPlayerElement = document.createElement('video');
+    
+    document.getElementById("videofranco").appendChild (videoPlayerElement);
+    videoPlayerElement.style.width='100%';
+    videoPlayerElement.setAttribute("controls","controls")  
+    //videoPlayerElement.style.controls
     updateVideo(0);
-    var hackvideo = document.getElementById('francohack');
+    var hackvideo = document.createElement('video');
+    container.appendChild (hackvideo);
+    //var hackvideo = document.getElementById('francohack');
+    hackvideo.src = "videoconvert/S1.mp4";
+    hackvideo.style.width='1px';
+    hackvideo.loop=true;
+    hackvideo.load();
     hackvideo.play();
     hackvideo.volume=0.001;
     
