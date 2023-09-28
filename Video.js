@@ -30,7 +30,7 @@ const nextButton = document.getElementById("next-button");
 
 function updateVideo(index) {
     videoTitleElement.textContent = videoTitles[index];
-    videoDescriptionElement.textContent = videoDescriptions[index]  + "muted";
+    videoDescriptionElement.textContent = videoDescriptions[index];
     videoPlayerElement.src = videoSources[index];
     currentIndex = index;
 }
