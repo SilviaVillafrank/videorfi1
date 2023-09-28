@@ -15,7 +15,7 @@ const videoDescriptions = ["Lo Scartamento è la minima distanza, in mm, fra i f
 "QP quota di protezione, si misura tra il fianco attivo della controrotaia e la punta del cuore ad una distanza di 100mm dalla punta reale del cuore.", "QP quota di protezione, si misura tra il fianco attivo della controrotaia e la punta del cuore ad una distanza di 100mm dalla punta reale del cuore.",
 "Le gole rappresentano la minima distanza espressa in mm, misurata dal piano di rotolamento fino a 14 mm sotto di esso, sia sul ramo principale che secondario. A1 si misurano prendendo l’apertura tra ago e contrago.", "A2 si misurano prendendo l’apertura tra ago e contrago.",
 "A3 si misurano tra controrotaia e rotaia unita alla controrotaia.", "A4 si misurano tra controrotaia e rotaia unita alla controrotaia.","A5 si misurano tra zampa di lepre e punta del cuore", "A6 si misurano tra zampa di lepre e punta del cuore"];
-const videoSources = ["videoconvert/O1.mp4", "videoconvert/S2.mp4", "videoconvert/S3.mp4","videoconvert/S4.mp4", "videoconvert/S5.mp4", "videoconvert/S6.mp4","videoconvert/S7.mp4", "videoconvert/S8.mp4",
+const videoSources = ["videoconvert/S1.mp4", "videoconvert/S2.mp4", "videoconvert/S3.mp4","videoconvert/S4.mp4", "videoconvert/S5.mp4", "videoconvert/S6.mp4","videoconvert/S7.mp4", "videoconvert/S8.mp4",
 "videoconvert/QPA1.mp4", "videoconvert/QPA2.mp4","videoconvert/QIC1.mp4", "videoconvert/QIC3.mp4", "videoconvert/QIC4.mp4",
 "videoconvert/QIZ1.mp4","videoconvert/QIZ2.mp4",
 "videoconvert/QLP1.mp4","videoconvert/QLP2.mp4","videoconvert/QP1.mp4","videoconvert/QP2.mp4",
