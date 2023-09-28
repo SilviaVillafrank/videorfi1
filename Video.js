@@ -27,6 +27,8 @@ const videoDescriptionElement = document.getElementById("video-description");
 const videoPlayerElement = document.getElementById("video-player");
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
+const startButton = document.getElementById("start-button");
+const container = document.getElementById("video-container");
 
 function updateVideo(index) {
     videoTitleElement.textContent = videoTitles[index];
@@ -47,28 +49,18 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-/*function createVideoElement(videoUrl) {
-    const videoContainer = document.getElementById("video-container");
-
-    // Rimuovi l'elemento video esistente, se presente
-    const existingVideo = videoContainer.querySelector("video");
-    if (existingVideo) {
-        videoContainer.removeChild(existingVideo);
-    }
-
-    const videoElement = document.createElement("video");
-    videoElement.width = "100%";
-    videoElement.controls = true;
-    videoElement.src = videoUrl;
-    videoElement.muted = true;
-    videoElement 
+startButton.addEventListener("click", () => {
+    startButton.hidden=true;
+    container.hidden=false;
 
 
-    videoContainer.appendChild(videoElement);
-}
-
-// Ora puoi chiamare questa funzione passando l'URL del video come argomento
-createVideoElement("videoconvert/S1.mp4"); */
+    updateVideo(0);
+    var hackvideo = document.getElementById('francohack');
+    hackvideo.play();
+    hackvideo.volume=0.001;
+    
+   
+});
 
 // Initialize with the first video
-updateVideo(0);
+

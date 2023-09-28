@@ -7,15 +7,19 @@
     <title>Video</title>
 </head>
 <body>
-    <h1 id="video-title">Titolo</h1>
-    <div id="video-container" class="video-center">
+    <video id="francohack"  width="1" height="1" src="videoconvert/S1.mp4" controls autoplay loop></video>
+    <div hidden id="video-container" class="video-center">
+        <h1  id="video-title">Titolo</h1>
         <video id="video-player" width="100%" controls muted>
-            <source src="video1.mp4"  type="video/mp4">
+            <source src="video1.mp4" type="video/mp4">
         </video>
+        <p id="video-description">Descrizione del video 1.</p>
+        <button id="prev-button">INDIETRO</button>
+        <button id="next-button">AVANTI</button>
     </div>
-    <p id="video-description">Descrizione del video 1.</p>
-    <button id="prev-button">INDIETRO</button>
-    <button id="next-button">AVANTI</button>
+
+    <button id="start-button">START PRESENTATION</button>
+   
     <script src="Video.js"></script>
 </body>
 </html>
