@@ -30,7 +30,7 @@ const nextButton = document.getElementById("next-button");
 
 function updateVideo(index) {
     videoTitleElement.textContent = videoTitles[index];
-    videoDescriptionElement.textContent = videoDescriptions[index];
+    videoDescriptionElement.textContent = videoDescriptions[index]  + "muted";
     videoPlayerElement.src = videoSources[index];
     currentIndex = index;
 }
@@ -46,6 +46,29 @@ nextButton.addEventListener("click", () => {
         updateVideo(currentIndex + 1);
     }
 });
+
+/*function createVideoElement(videoUrl) {
+    const videoContainer = document.getElementById("video-container");
+
+    // Rimuovi l'elemento video esistente, se presente
+    const existingVideo = videoContainer.querySelector("video");
+    if (existingVideo) {
+        videoContainer.removeChild(existingVideo);
+    }
+
+    const videoElement = document.createElement("video");
+    videoElement.width = "100%";
+    videoElement.controls = true;
+    videoElement.src = videoUrl;
+    videoElement.muted = true;
+    videoElement 
+
+
+    videoContainer.appendChild(videoElement);
+}
+
+// Ora puoi chiamare questa funzione passando l'URL del video come argomento
+createVideoElement("videoconvert/S1.mp4"); */
 
 // Initialize with the first video
 updateVideo(0);
