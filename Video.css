@@ -48,6 +48,22 @@
     
 }
 
+#home-button {
+    background-color: #006558;
+    color: #EDEDED;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    margin-left: 625px;
+    margin-top: 50px;
+    margin-bottom: -90px;
+    
+}
+
+
 #start-button {
     background-color: #006558;
     color: #EDEDED;
