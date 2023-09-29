@@ -57,7 +57,7 @@
     cursor: pointer;
     font-size: 22px;
     display: flex;
-    margin-left: 625px;
+    margin-left: 575px;
     margin-top: 50px;
     margin-bottom: -90px;
     
@@ -79,3 +79,23 @@
     margin-bottom: -95px;
     
 }
+
+#prev-button:hover,
+#next-button:hover,
+#home-button:hover,
+#start-button:hover {
+    background-color: #DADADA ; /* Cambia il colore in verde quando il mouse è sopra */
+    color: #006558; /* Cambia il colore del testo quando il mouse è sopra */
+}
+
+#video-player {
+    width: 1920px; /* Larghezza desiderata */
+    height: 1080px; /* Altezza desiderata */
+}
+
+#page-counter {
+    color: #CD0033;
+    font-size: 30px;
+    text-align:center;
+}
+
