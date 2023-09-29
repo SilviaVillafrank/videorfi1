@@ -92,13 +92,18 @@ startButton.addEventListener("click", () => {
     updatePageCounter();
 });
 
+
 homeButton.addEventListener("click", () => {
+    window.location.reload();
+});
+
+/*homeButton.addEventListener("click", () => {
     const index = videoTitles.indexOf("Scartamento S1");
     if (index !== -1) {
         updateVideo(index);
         updatePageCounter();
     }
-});
+});*/
 
 
 
