@@ -43,7 +43,6 @@
     font-size: 22px;
     display: flex;
     margin-right: auto;
-    margin-top: 50px;
     margin-bottom: -95px;
     
 }
@@ -54,7 +53,6 @@
     border: none;
     border-radius: 50%;
     padding: 10px;
-    margin-left: 1150px; 
 }
 
 #start-button {
