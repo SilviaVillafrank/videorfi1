@@ -94,7 +94,7 @@ startButton.addEventListener("click", () => {
 
 
 homeButton.addEventListener("click", () => {
-    window.location.reload();
+    window.location.reload(true);
 });
 
 /*homeButton.addEventListener("click", () => {
